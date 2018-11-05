@@ -13,11 +13,12 @@ public class Jszycer {
 
 	private static char SzyfrCezaraLepszy(char a)
 	{
+		final int numberOflettersInAlphabet = 26;
 		int pom;
 		pom = (int)a;
-		if(pom > 87 && pom < 91)
+		if(pom >= 'X' && pom <= 'Z')
 		{
-			pom = pom - 26;
+			pom = pom - numberOflettersInAlphabet;
 		}
 		pom += 3;
 		return (char)pom;
@@ -30,7 +31,7 @@ public class Jszycer {
 		{
 			char znak = zdanie.charAt(i);
 			int pom = (int) znak;
-			if( pom > 64 && pom < 91  )
+			if( pom >= 'A' && pom <= 'Z'  )
 			{
 				znak = SzyfrCezaraLepszy(znak);
 				wynik = wynik + znak;

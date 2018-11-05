@@ -5,21 +5,21 @@ public class JHTMLLET_2 {
 	public static void main(String[] args) {
 		String linia = "" ;
 		Scanner stdInput = new Scanner(System.in);
-		
+		final int przesuniecieDoDuzychLiterWAscii = 32;
 			while(stdInput.hasNextLine())
 			{
-				int byloRozpoczecieTagu = 0;
+				boolean byloRozpoczecieTagu = false;
 				linia = stdInput.nextLine();
 				for(int j = 0; j < linia.length();j++)
 				{
 					int pom = (int)linia.charAt(j);
-					if( pom == '<' ) byloRozpoczecieTagu++;
-					if( byloRozpoczecieTagu > 0 && pom == '>' ) byloRozpoczecieTagu--;
-					if(byloRozpoczecieTagu>0)
+					if( pom == '<' ) byloRozpoczecieTagu=true;
+					if( byloRozpoczecieTagu == true && pom == '>' ) byloRozpoczecieTagu=false;
+					if(byloRozpoczecieTagu==true)
 					{
 						if( pom >= 'a' && pom <= 'z')
 						{
-							pom = pom - 32;
+							pom = pom - przesuniecieDoDuzychLiterWAscii;
 						}
 					}
 					System.out.print((char)pom);

@@ -4,6 +4,8 @@ public class AlfabetM {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		final int offsetToUppercaseInAscii = 65;
+		final int offsetToLowercaseInAscii = 97;
 		String [] Morse = {".-","-...","-.-.","-..",".",".-..","--.","....","..",".---",
 				"-.-","..-.","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",
 				".--","-..-","-.--","--.."};
@@ -19,14 +21,14 @@ public class AlfabetM {
 				{
 					if(temp >= 'A' && temp <= 'Z') 
 					{
-						System.out.print(Morse[(int)temp - 65]);
+						System.out.print(Morse[(int)temp - offsetToUppercaseInAscii]);
 						System.out.print('/');
 					}
 					else
 					{
 						if(temp >= 'a' && temp <= 'z') 
 						{
-							System.out.print(Morse[(int)temp - 97]);
+							System.out.print(Morse[(int)temp - offsetToLowercaseInAscii]);
 							System.out.print('/');
 						}
 					}	

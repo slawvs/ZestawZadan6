@@ -10,7 +10,7 @@ public class Pytanka {
 		Pytanko pytanie2 = new Pytanko(" Jaka jest moja ulubiona gra ?"," WoW "," Dota "," Fifa "," Uncharted ",102);
 		Pytanko pytanie3 = new Pytanko(" Najlepsza marka samochodów na œwiecie wg mnie :) "," Toyota "," Ferrari "," Ford "," BMW ",579);
 		Pytanko pytanie4 = new Pytanko(" Ulubiona liga pi³karska ? "," Premier League "," Ekstraklasa "," Premiera Division "," Bundesliga ",1156);
-		Pytanko pytanie5 = new Pytanko(" Lubiê placki ? "," TAAK! , z nutell¹ :)  "," Ni cholere "," Fuj "," Zawsze :) byle z d¿emorem  ",1776);
+		Pytanko pytanie5 = new Pytanko(" Lubiê placki ? "," TAAK! , z nutell¹ :)  "," Niee "," Fuj "," Zawsze :) byle z d¿emorem  ",1776);
 		Pytanko pytanie6 = new Pytanko(" W co lubiê haratn¹æ ? "," W drzewo "," W ga³ê "," Co to w ogole znaczy ?? "," w ¿y³ê ",142225);
 		Pytania.add(pytanie1);
 		Pytania.add(pytanie2);
